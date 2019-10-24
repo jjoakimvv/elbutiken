@@ -1,18 +1,21 @@
+
+
 body{
 background-color: rgb(87, 83, 78);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 2vw;
 }
 .site{
  display: grid;
  grid-template-columns: auto auto auto;
- padding: 10px;
- grid-gap: 10px;
+ padding: 1vw;
+ grid-gap: 1vw;
 }
 .grid-item{
 background-color: blueviolet;
 border: 1px solid rgba(0, 0, 0, 0.8);
 padding: 20px;
-font-size: 30px;
+
 text-align: center;
 border-radius: 5px;
 }
