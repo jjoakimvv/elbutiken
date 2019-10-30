@@ -44,7 +44,7 @@ table {
 }
 /* CSS-RESET END*/
 
-/*Boilerplate Start*/
+/*Boilerplate START*/
 @media print {
 	*,
 	*:before,
@@ -104,7 +104,7 @@ table {
 			page-break-after: avoid;
 	}
 }
-/*Boilerplate end*/
+/*Boilerplate END*/
 
 
 
@@ -113,18 +113,7 @@ body{
 background-color: rgb(255, 255, 255);
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* a{
-	text-decoration: none;
-	color: black;
-}
-a:hover{
-	background-color: black;
-	color: white;
-} */
-.site{
- display: grid;
- grid-template-columns: 1fr;
-}
+/*Huvudmeny Start*/
 .invisible-header{
 	grid-row: 1;
 	grid-column: 1/2;
@@ -153,6 +142,13 @@ a:hover{
 .navbar-links a:hover{
 	background-color: #ddd;
 	color: black;
+}
+/*Huvudmeny END*/
+
+/*Main startsida - START*/
+.site-index{
+ display: grid;
+ grid-template-columns: 1fr;
 }
 .main-area{
 	grid-column: 1/2;
@@ -234,9 +230,87 @@ a:hover{
 	color: white;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+/*Main startsida - END*/
+
+/*Main handla - START*/
+.site-handla{
+ display: grid;
+	grid-template-columns: auto auto auto;
+}
+.invisible-row{
+	grid-row: 1;
+	grid-column: 1/4;
+	height: 60px;
+}
+.main-area-handla{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.box-handla{
+	background: black;
+	color: white;
+	border-radius: 5px;
+	padding: 5%;
+	transition: transform .2s;
+	margin: 5% 2% 2% 2%;
+}
+.box-handla:hover{
+	transform: scale(1.03);
+}
+.produkt-img{
+	border-radius: 5px 5px 0px 0px;
+	width: 100%;
+}
+.produkt-grid{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	padding: 5%;
+}
+.produkt1{
+	grid-row: 2;
+	grid-column: 1;
+	padding: 0px;
+}
+.produkt2{
+	grid-row: 2;
+	grid-column: 2;
+	padding: 0px;
+}
+.produkt3{
+	grid-row: 2;
+	grid-column: 3;
+	padding: 0px;
+}
+.produkt-text1 {
+	text-align: left;
+	padding: 0% 3% 3% 3%;
+	grid-column: 1;
+	font-size: 80%;
+}
+.produkt-text2 {
+	text-align: right;
+	padding: 0% 3% 3% 3%;
+	grid-column: 2;
+	font-size: 80%;
+}
+.produkt-text3 {
+	text-align: right;
+	padding: 0% 10% 3% 3%;
+	grid-column: 3;
+	color: red;
+	font-size: 80%;
+}
+
+
+/*Main handla - END*/
+
+/*Footer*/
 .footer{
-	grid-column: 1/2;
-	grid-row: 3;
+	position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ color: white;
 	text-align: center;
 	padding: 15px;
 	color: ivory;
