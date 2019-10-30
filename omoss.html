@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Elbutiken - Om oss</title>
- <link rel="stylesheet" href="site.css">
-</head>
-<body>
 
- <div class="site">
-   <header class="invisible-header"></header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elbutiken - Om oss</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+  </head>
 
-   <header class="navbar">
-
-     <picture class="navbar-logo">
-       <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
-     </picture>
-     
-     <nav class="navbar-links">
-       <ul>
-         <li><a href="varukorg.html"><img src="" alt=""> Varukorg</a></li>
-         <li><a href="kontakt.html">Kontakt</a></li>
-         <li><a href="omoss.html">Om oss</a></li>
-         <li><a href="handla.html">Handla</a></li>
-         <li><a href="index.html">Hem</a></li>
-       </ul>
-     </nav>
-     
-   </header>
-
-   <main class="main-area">
+  <body>
   
-     <h4><br> Om oss <br><br></h4>
+     <div class="site-handla">
 
-    </main>
+      <header class="invisible-header"></header>
 
-   <footer class="footer"><h6>Copyright 2019</h6></footer>
- </div>
+      <!-- Brett fönster -->
+      <header class="navbar-brett">
+        <picture class="navbar-logo">
+          <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
+        </picture>
+        <nav class="navbar-links">
+          <ul>
+            <li><a href="varukorg.html"><img src="" alt=""> Varukorg</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="handla.html">Handla</a></li>
+            <li><a href="index.html">Hem</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Mellan fönster -->
+      <header class="navbar-mellan">
+          <picture class="navbar-logo">
+            <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
+          </picture>
+          <nav class="navbar-links">
+            <ul>
+              <li><a href="varukorg.html"><img src="" alt=""> Varukorg</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="omoss.html">Om oss</a></li>
+              <li><a href="handla.html">Handla</a></li>
+              <li><a href="index.html">Hem</a></li>
+            </ul>
+          </nav>
+        </header>
+      <!-- Smalt fönster -->
+       <header class="topnav">
+          <a href="index.html" class="active"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
+          <!-- Navigation links (hidden by default) -->
+          <nav id="myLinks">
+              <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="handla.html">Handla</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="varukorg.html">Varukorg</a></li>
+              </ul>
+            </nav>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+         </header>
 
-</body>
+      <main class="main-area-handla">
+
+       <p>Om oss</p>
+
+       </main>
+
+      <!-- <footer class="footer"><h6>Copyright 2019</h6></footer> -->
+
+    </div>
+  
+  </body>
+
 </html>

@@ -5,6 +5,8 @@
     <title>404 - Page Not Found</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <style>
         * {
             line-height: 1.2;
@@ -49,23 +51,57 @@
 
         <header class="invisible-header"></header>
 
-        <header class="navbar">
-  
+        <!-- Brett fönster -->
+        header class="invisible-header"></header>
+
+        <!-- Brett fönster -->
+        <header class="navbar-brett">
           <picture class="navbar-logo">
             <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
           </picture>
-          
           <nav class="navbar-links">
             <ul>
-              <li><a href="#varukorg"><img src="" alt=""> Varukorg</a></li>
-              <li><a href="#kontact">Kontakt</a></li>
-              <li><a href="#kontact">Om oss</a></li>
-              <li><a href="#handla">Handla</a></li>
+              <li><a href="varukorg.html"><img src="" alt=""> Varukorg</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="omoss.html">Om oss</a></li>
+              <li><a href="handla.html">Handla</a></li>
               <li><a href="index.html">Hem</a></li>
             </ul>
           </nav>
-          
         </header>
+        <!-- Mellan fönster -->
+        <header class="navbar-mellan">
+            <picture class="navbar-logo">
+              <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
+            </picture>
+            <nav class="navbar-links">
+              <ul>
+                <li><a href="varukorg.html"><img src="" alt=""> Varukorg</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="handla.html">Handla</a></li>
+                <li><a href="index.html">Hem</a></li>
+              </ul>
+            </nav>
+          </header>
+        <!-- Smalt fönster -->
+         <header class="topnav">
+            <a href="index.html" class="active"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
+            <!-- Navigation links (hidden by default) -->
+            <nav id="myLinks">
+                <ul>
+                  <li><a href="index.html">Hem</a></li>
+                  <li><a href="handla.html">Handla</a></li>
+                  <li><a href="omoss.html">Om oss</a></li>
+                  <li><a href="kontakt.html">Kontakt</a></li>
+                  <li><a href="varukorg.html">Varukorg</a></li>
+                </ul>
+              </nav>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+           </header>
 
         <main class="main-area">
             <h1 class="main-heading">404 Page Not Found</h1>

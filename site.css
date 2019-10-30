@@ -44,193 +44,16 @@ table {
 }
 /* CSS-RESET END*/
 
-/*Boilerplate START*/
-@media print {
-	*,
-	*:before,
-	*:after {
-			background: transparent !important;
-			color: #000 !important;
-			/* Black prints faster */
-			-webkit-box-shadow: none !important;
-			box-shadow: none !important;
-			text-shadow: none !important;
-	}
-	a,
-	a:visited {
-			text-decoration: underline;
-	}
-	a[href]:after {
-			content: " (" attr(href) ")";
-	}
-	abbr[title]:after {
-			content: " (" attr(title) ")";
-	}
-	/*
-				* Don't show links that are fragment identifiers,
-				* or use the `javascript:` pseudo protocol
-				*/
-	a[href^="#"]:after,
-	a[href^="javascript:"]:after {
-			content: "";
-	}
-	pre {
-			white-space: pre-wrap !important;
-	}
-	pre,
-	blockquote {
-			border: 1px solid #999;
-			page-break-inside: avoid;
-	}
-	/*
-				* Printing Tables:
-				* https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-				*/
-	thead {
-			display: table-header-group;
-	}
-	tr,
-	img {
-			page-break-inside: avoid;
-	}
-	p,
-	h2,
-	h3 {
-			orphans: 3;
-			widows: 3;
-	}
-	h2,
-	h3 {
-			page-break-after: avoid;
-	}
-}
-/*Boilerplate END*/
-
-
-
 
 body{
 background-color: rgb(255, 255, 255);
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/*Huvudmeny Start*/
 .invisible-header{
 	grid-row: 1;
 	grid-column: 1/2;
 	height: 60px;
 }
-.navbar{
-	background-color: rgb(32, 32, 32);
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 999;
-	font-size: 2vw;
-}
-.navbar-logo{
-	padding: 5px;
-	float: left;
-}
-.navbar-links a{
-	float: right;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 20px;
-	text-decoration: none;
-}
-.navbar-links a:hover{
-	background-color: #ddd;
-	color: black;
-}
-/*Huvudmeny END*/
-
-/*Main startsida - START*/
-.site-index{
- display: grid;
- grid-template-columns: 1fr;
-}
-.main-area{
-	grid-column: 1/2;
-	grid-row: 2;
-}
-.main-img{
-  width: 100%;
-}
-.main-heading{
-	position: absolute;
-	width: 100%;
- top: 28%;
-	text-align: center;
-	text-shadow: 2px 2px 5px rgb(187, 187, 187);
-	background-color: none;
-	font-size: 4vw;
-}
-.main-text{
-	position: absolute;
-	left: 30%;
-	width: 40%;
- top: 36%;
-	text-align: center;
-	padding: 0.5%;
-	background-color: rgba(77, 77, 77, 0.7);
-	color: rgb(255, 255, 255);
-	font-size: 1.25vw;
-	border-radius: 5px;
-}
-.knapp1{
-	position: relative;
-	width: 100%;
-}
-.knapp1 .btn1{
-	position: absolute;
-	top: 58%;
-	left: 40%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-	border: 1.5px solid black;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	font-size: 16px;
-	padding: 12px 24px;
-	cursor: pointer;
-	border-radius: 5px;
-	text-align: center;
-	text-decoration: none;
-}
-.knapp1 .btn1:hover{
-	background-color: black;
-	color: white;
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.knapp2{
-	position: relative;
-	width: 100%;
-}
-.knapp2 .btn2{
-	position: absolute;
-	top: 58%;
-	left: 60%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-	border: 1.5px solid black;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	font-size: 16px;
-	padding: 12px 24px;
-	cursor: pointer;
-	border-radius: 5px;
-	text-align: center;
-	text-decoration: none;
-}
-.knapp2 .btn2:hover{
-	background-color: black;
-	color: white;
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-/*Main startsida - END*/
 
 /*Footer*/
 .footer{
@@ -246,7 +69,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 
 /* brett-fönster */
-@media only screen and (min-width: 851px) {
+@media (min-width: 851px) {
 	.brett-fönster{
 		display: inline;
 	}
@@ -256,7 +79,135 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	.smalt-fönster{
   display: none;
 	}
-		/*Main handla - START*/
+	.navbar-mellan{
+		display: none;
+	}
+	.topnav{
+		display: none;
+	}
+	#mellan{
+		display: none;
+	}
+	#smalt{
+		display: none;
+	}
+	/*Huvudmeny - Start*/
+	.navbar-brett{
+		background-color: rgb(32, 32, 32);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+		font-size: 2vw;
+	}
+	.navbar-logo{
+		padding: 5px;
+		float: left;
+	}
+	.navbar-links a{
+		float: right;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		text-decoration: none;
+	}
+	.navbar-links a:hover{
+		background-color: #ddd;
+		color: black;
+	}
+	/*Huvudmeny - END*/
+
+ /*Main startsida - START*/
+	.site-index{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.main-area{
+		grid-column: 1/2;
+		grid-row: 2;
+	}
+	.main-img{
+		width: 100%;
+	}
+	.main-heading{
+		position: absolute;
+		width: 100%;
+		top: 28%;
+		text-align: center;
+		text-shadow: 2px 2px 5px rgb(187, 187, 187);
+		background-color: none;
+		font-size: 4vw;
+	}
+	.main-text{
+		position: absolute;
+		left: 30%;
+		width: 40%;
+		top: 36%;
+		text-align: center;
+		padding: 0.5%;
+		background-color: rgba(77, 77, 77, 0.7);
+		color: rgb(255, 255, 255);
+		font-size: 1.25vw;
+		border-radius: 5px;
+	}
+	.knapp1{
+		position: relative;
+		width: 100%;
+	}
+	.knapp1 .btn1{
+		position: absolute;
+		top: 58%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		border: 1.5px solid black;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		font-size: 16px;
+		padding: 12px 24px;
+		margin: 10px;
+		cursor: pointer;
+		border-radius: 5px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.knapp1 .btn1:hover{
+		background-color: black;
+		color: white;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.knapp2{
+		position: relative;
+		width: 100%;
+	}
+	.knapp2 .btn2{
+		position: absolute;
+		top: 58%;
+		left: 60%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		border: 1.5px solid black;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		font-size: 16px;
+		padding: 12px 24px;
+		margin: 10px;
+		cursor: pointer;
+		border-radius: 5px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.knapp2 .btn2:hover{
+		background-color: black;
+		color: white;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	/*Main startsida - END*/
+
+	/*Main handla - START*/
 	.site-handla{
 		display: grid;
 		grid-template-columns: auto auto auto;
@@ -335,9 +286,8 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		/*Main handla - END*/
  }
 }
-
 /* mellan-fönster */
-@media only screen and (max-width: 850px) {
+@media (max-width: 850px) {
 	.brett-fönster{
 		display: none;
 	}
@@ -347,6 +297,134 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	.smalt-fönster{
 		display: none;
 	}
+	.navbar-brett{
+		display: none;
+	}
+	.topnav{
+		display: none;
+	}
+	#brett{
+		display: none;
+	}
+	#smalt{
+		display: none;
+	}
+	/*Huvudmeny - Start*/
+ .navbar-mellan{
+	 background-color: rgb(32, 32, 32);
+	 position: fixed;
+	 top: 0;
+	 width: 100%;
+	 z-index: 999;
+	 font-size: 2vw;
+ }
+	.navbar-logo{
+		padding: 5px;
+		float: left;
+	}
+	.navbar-links a{
+		float: right;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		text-decoration: none;
+	}
+	.navbar-links a:hover{
+		background-color: #ddd;
+		color: black;
+	}
+	/*Huvudmeny - END*/
+
+	/*Main startsida - START*/
+	.site-index{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.main-area{
+		grid-column: 1/2;
+		grid-row: 2;
+	}
+	.main-img{
+		width: 100%;
+	}
+	.main-heading{
+		position: absolute;
+		width: 100%;
+		top: 28%;
+		text-align: center;
+		text-shadow: 2px 2px 5px rgb(187, 187, 187);
+		background-color: none;
+		font-size: 4vw;
+	}
+	.main-text{
+		position: absolute;
+		left: 30%;
+		width: 40%;
+		top: 36%;
+		text-align: center;
+		padding: 0.5%;
+		background-color: rgba(77, 77, 77, 0.7);
+		color: rgb(255, 255, 255);
+		font-size: 1.25vw;
+		border-radius: 5px;
+	}
+	.knapp1{
+		position: relative;
+		width: 100%;
+	}
+	.knapp1 .btn1{
+		position: absolute;
+		top: 58%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		border: 1.5px solid black;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		font-size: 16px;
+		padding: 12px 24px;
+		margin: 10px;
+		cursor: pointer;
+		border-radius: 5px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.knapp1 .btn1:hover{
+		background-color: black;
+		color: white;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.knapp2{
+		position: relative;
+		width: 100%;
+	}
+	.knapp2 .btn2{
+		position: absolute;
+		top: 58%;
+		left: 60%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		border: 1.5px solid black;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		font-size: 16px;
+		padding: 12px 24px;
+		margin: 10px;
+		cursor: pointer;
+		border-radius: 5px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.knapp2 .btn2:hover{
+		background-color: black;
+		color: white;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	/*Main startsida - END*/
+
 	/*Main handla - START*/
 	.site-handla{
 		display: grid;
@@ -423,11 +501,11 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		grid-column: 3;
 		color: red;
 		font-size: 80%;
-		/*Main handla - END*/
 	}
+	/*Main handla - END*/
 }
 /* smalt-fönster */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	.brett-fönster{
   display: none;
 	}
@@ -437,11 +515,62 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	.smalt-fönster{
 		display: inline;
 	}
+	.invisible-header{
+		display: none;
+	}
+	.navbar-brett{
+		display: none;
+	}
+	.navbar-mellan{
+		display: none;
+	}
+	#brett{
+		display: none;
+	}
+	#mellan{
+		display: none;
+	}
+	/* Style the navigation menu */
+ .topnav {
+		display: inline;
+	 overflow: hidden;
+	 background-color: rgb(105, 105, 105);
+		position: relative;
+	}
+ /* Hide the links inside the navigation menu (except for logo/home) */
+ .topnav #myLinks {
+	 display: none;
+ }
+ /* Style navigation menu links */
+ .topnav a {
+	 color: white;
+	 padding: 14px 16px;
+	 text-decoration: none;
+	 font-size: 17px;
+	 display: block;
+  }
+ /* Style the hamburger menu */
+ .topnav a.icon {
+	 background: black;
+	 display: block;
+	 position: absolute;
+	 right: 0;
+		top: 0;
+  }
+ /* Add a grey background color on mouse-over */
+ .topnav a:hover {
+ 	background-color: #ddd;
+	 color: black;
+ }
+ /* Style the active link (or home/logo) */
+ .active {
+ 	background-color: rgb(32, 32, 32);
+	 color: white;
+ }
 	/* Main hem - START */
 	.main-heading{
 		position: absolute;
 		width: 100%;
-		/* top: 20%; */
 		text-align: center;
 		text-shadow: 2px 2px 5px rgb(187, 187, 187);
 		background-color: none;
@@ -451,7 +580,6 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		position: absolute;
 		left: 10%;
 		width: 80%;
-		/* top: 30%; */
 		text-align: center;
 		padding: 0.5%;
 		background-color: rgba(77, 77, 77, 0.7);
@@ -521,7 +649,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	.invisible-row{
 		grid-row: 1;
 		grid-column: 1/2;
-		height: 60px;
+		height: 10px;
 	}
 	.main-area-handla{
 		display: grid;

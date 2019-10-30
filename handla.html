@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Elbutiken - Handla</title>
     <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
   </head>
 
@@ -16,12 +17,11 @@
 
       <header class="invisible-header"></header>
 
-      <header class="navbar">
-
+      <!-- Brett fönster -->
+      <header class="navbar-brett">
         <picture class="navbar-logo">
           <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
         </picture>
-        
         <nav class="navbar-links">
           <ul>
             <li><a href="varukorg.html"><img src="" alt=""> Varukorg</a></li>
@@ -31,8 +31,40 @@
             <li><a href="index.html">Hem</a></li>
           </ul>
         </nav>
-        
       </header>
+      <!-- Mellan fönster -->
+      <header class="navbar-mellan">
+          <picture class="navbar-logo">
+            <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
+          </picture>
+          <nav class="navbar-links">
+            <ul>
+              <li><a href="varukorg.html"><img src="" alt=""> Varukorg</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="omoss.html">Om oss</a></li>
+              <li><a href="handla.html">Handla</a></li>
+              <li><a href="index.html">Hem</a></li>
+            </ul>
+          </nav>
+        </header>
+      <!-- Smalt fönster -->
+       <header class="topnav">
+          <a href="index.html" class="active"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
+          <!-- Navigation links (hidden by default) -->
+          <nav id="myLinks">
+              <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="handla.html">Handla</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="varukorg.html">Varukorg</a></li>
+              </ul>
+            </nav>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+         </header>
 
       <main class="main-area-handla">
 
@@ -108,7 +140,7 @@
 
        </main>
 
-      <footer class="footer"><h6>Copyright 2019</h6></footer>
+      <!-- <footer class="footer"><h6>Copyright 2019</h6></footer> -->
          
 
        <!-- Popup script -->
