@@ -290,20 +290,29 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		grid-template-columns: 1fr 2fr 1fr;
 		padding: 5%;
 	}
-	.produkt1{
+	.produkt1-brett{
 		grid-row: 2;
 		grid-column: 1;
 		padding: 0px;
 	}
-	.produkt2{
+	.produkt2-brett{
 		grid-row: 2;
 		grid-column: 2;
 		padding: 0px;
 	}
-	.produkt3{
+	.produkt3-brett{
 		grid-row: 2;
 		grid-column: 3;
 		padding: 0px;
+	}
+	.produkt1-smalt{
+		display: none;
+	}
+	.produkt2-smalt{
+		display: none;
+	}
+	.produkt3-smalt{
+		display: none;
 	}
 	.produkt-text1 {
 		text-align: left;
@@ -372,20 +381,29 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		grid-template-columns: 1fr 2fr 1fr;
 		padding: 5%;
 	}
-	.produkt1{
+	.produkt1-brett{
 		grid-row: 2;
 		grid-column: 1;
 		padding: 0px;
 	}
-	.produkt2{
+	.produkt2-brett{
 		grid-row: 2;
 		grid-column: 2;
 		padding: 0px;
 	}
-	.produkt3{
+	.produkt3-brett{
 		grid-row: 3;
 		grid-column: 1;
 		padding: 0px;
+	}
+	.produkt1-smalt{
+		display: none;
+	}
+	.produkt2-smalt{
+		display: none;
+	}
+	.produkt3-smalt{
+		display: none;
 	}
 	.produkt-text1 {
 		text-align: left;
@@ -453,17 +471,29 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		grid-template-columns: 1fr 2fr 1fr;
 		padding: 5%;
 	}
-	.produkt1{
+	.produkt1-brett{
+		display: none;
+	}
+	.produkt2-brett{
+		display: none;
+	}
+	.produkt3-brett{
+		display: none;
+	}
+	.produkt1-smalt{
+		display: inline;
 		grid-row: 2;
 		grid-column: 1;
 		padding: 0px;
 	}
-	.produkt2{
+	.produkt2-smalt{
+		display: inline;
 		grid-row: 3;
 		grid-column: 1;
 		padding: 0px;
 	}
-	.produkt3{
+	.produkt3-smalt{
+		display: inline;
 		grid-row: 4;
 		grid-column: 1;
 		padding: 0px;
