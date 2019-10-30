@@ -166,6 +166,7 @@ a:hover{
 	width: 100%;
  top: 28%;
 	text-align: center;
+	text-shadow: 2px 2px 5px rgb(187, 187, 187);
 	background-color: none;
 	font-size: 4vw;
 }
