@@ -238,7 +238,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	}
 	.produkt-grid{
 		display: grid;
-		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-columns: 1fr;
 		padding: 5%;
 	}
 	.produkt1-brett{
@@ -266,36 +266,20 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		display: none;
 	}
 	.produkt-text1 {
-		text-align: left;
-		padding: 0% 3% 3% 3%;
 		grid-column: 1;
-		font-size: 80%;
+		font-size: 2vw;
+		text-align: center;
 	}
-	.produkt-text2 {
-		text-align: right;
-		padding: 0% 3% 3% 3%;
-		grid-column: 2;
-		font-size: 80%;
-	}
-	.produkt-text3 {
-		text-align: right;
-		padding: 0% 10% 3% 3%;
-		grid-column: 3;
-		color: red;
-		font-size: 80%;
-		/*Main handla - END*/
-	}
-	
+	/*Main handla - END*/
 	/*Main om oss - START*/
 	.site-omoss{
 		display: grid;
 		grid-template-columns: auto;
-	}
+	 }
 	.main-area-omoss{
-		display: grid;
+	 display: grid;
 		grid-template-columns: 1fr;
 	}
-
 	/*Main om oss - END*/
 }
 /* mellan-fönster */
@@ -367,7 +351,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		text-align: center;
 		text-shadow: 2px 2px 5px rgb(187, 187, 187);
 		background-color: none;
-		font-size: 4vw;
+		font-size: 6vw;
 	}
 	.main-text{
 		position: absolute;
@@ -378,7 +362,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		padding: 0.5%;
 		background-color: rgba(77, 77, 77, 0.7);
 		color: rgb(255, 255, 255);
-		font-size: 1.25vw;
+		font-size: 1.5vw;
 		border-radius: 5px;
 	}
 	.knapp1{
@@ -468,7 +452,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	}
 	.produkt-grid{
 		display: grid;
-		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-columns: 1fr;
 		padding: 5%;
 	}
 	.produkt1-brett{
@@ -496,26 +480,14 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		display: none;
 	}
 	.produkt-text1 {
-		text-align: left;
-		padding: 0% 3% 3% 3%;
 		grid-column: 1;
-		font-size: 80%;
+		font-size: 3vw;
+		text-align: center;
 	}
-	.produkt-text2 {
-		text-align: right;
-		padding: 0% 3% 3% 3%;
-		grid-column: 2;
-		font-size: 80%;
-	}
-	.produkt-text3 {
-		text-align: right;
-		padding: 0% 10% 3% 3%;
-		grid-column: 3;
-		color: red;
-		font-size: 80%;
-	}
+	
 	/*Main handla - END*/
 }
+
 /* smalt-fönster */
 @media (max-width: 600px) {
 	.brett-fönster{
@@ -696,7 +668,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	}
 	.produkt-grid{
 		display: grid;
-		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-columns: 1fr;
 		padding: 5%;
 	}
 	.produkt1-brett{
@@ -727,23 +699,10 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		padding: 0px;
 	}
 	.produkt-text1 {
-		text-align: left;
-		padding: 0% 3% 3% 3%;
 		grid-column: 1;
-		font-size: 80%;
+		font-size: 4vw;
+		text-align: center;
 	}
-	.produkt-text2 {
-		text-align: right;
-		padding: 0% 3% 3% 3%;
-		grid-column: 2;
-		font-size: 80%;
-	}
-	.produkt-text3 {
-		text-align: right;
-		padding: 0% 10% 3% 3%;
-		grid-column: 3;
-		color: red;
-		font-size: 80%;
 		/*Main handla - END*/
 	}
 }
