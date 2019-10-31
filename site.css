@@ -284,10 +284,22 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 		color: red;
 		font-size: 80%;
 		/*Main handla - END*/
- }
+	}
+	
+	/*Main om oss - START*/
+	.site-omoss{
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.main-area-omoss{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	/*Main om oss - END*/
 }
 /* mellan-fönster */
-@media (max-width: 850px) {
+@media (min-width: 601px) and (max-width: 850px) {
 	.brett-fönster{
 		display: none;
 	}
@@ -532,7 +544,6 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	}
 	/* Style the navigation menu */
  .topnav {
-		display: inline;
 	 overflow: hidden;
 	 background-color: rgb(105, 105, 105);
 		position: relative;
@@ -568,8 +579,20 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	 color: white;
  }
 	/* Main hem - START */
+	.site-index{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.main-area{
+		grid-column: 1/2;
+		grid-row: 2;
+	}
+	.main-img{
+		width: 100%;
+	}
 	.main-heading{
 		position: absolute;
+		top: 20%;
 		width: 100%;
 		text-align: center;
 		text-shadow: 2px 2px 5px rgb(187, 187, 187);
@@ -578,6 +601,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	}
 	.main-text{
 		position: absolute;
+		top: 30%;
 		left: 10%;
 		width: 80%;
 		text-align: center;
@@ -593,15 +617,15 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	}
 	.knapp1 .btn1{
 		position: absolute;
-		/* top: 60%;
-		left: 35%; */
+		top: 50%;
+		left: 35%;
 		transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		background-color: rgb(255, 255, 255);
 		color: rgb(0, 0, 0);
 		border: 1.5px solid black;
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-		font-size: 10px;
+		font-size: 14px;
 		padding: 12px 24px;
 		cursor: pointer;
 		border-radius: 5px;
@@ -619,15 +643,15 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	}
 	.knapp2 .btn2{
 		position: absolute;
-		/* top: 60%;
-		left: 65%; */
+		top: 50%;
+		left: 65%;
 		transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		background-color: rgb(255, 255, 255);
 		color: rgb(0, 0, 0);
 		border: 1.5px solid black;
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-		font-size: 10px;
+		font-size: 14px;
 		padding: 12px 24px;
 		cursor: pointer;
 		border-radius: 5px;
