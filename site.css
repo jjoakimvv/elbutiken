@@ -162,14 +162,13 @@ input[type=submit]:hover {
 .invisible-row-varukorg{
 	grid-row: 1;
 	grid-column: 1/4;
-	height: 20px;
-	background-color: chartreuse;
+	height: 10px;
 }
 .main-area-varukorg{
 	display: grid;
 	grid-template-columns: 1fr;
 	text-align: center;
-	margin: 1%;
+	margin: 2%;
 }
 .föremål-grid{
 	display: grid;
@@ -213,13 +212,11 @@ input[type=submit]:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .betala-knapp{
-	position: relative;
+	margin: 4% auto 4% auto;
 	grid-row: 5;
 	width: 100%;
 }
 .betala-knapp .btn3{
-	position: absolute;
-	margin-top: 2%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	background-color: rgb(255, 255, 255);
