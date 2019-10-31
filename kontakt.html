@@ -13,7 +13,7 @@
 
   <body>
   
-     <div class="site-handla">
+     <div class="">
 
       <header class="invisible-header"></header>
 
@@ -66,9 +66,32 @@
           </a>
          </header>
 
-      <main class="main-area-handla">
+         <header class="invisible-row-kontakt"></header>
 
-        <p>Kontakt</p>
+      <main class="main-area-kontakt">
+          <div class="container">
+              <form action="action_page.php">
+            
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
+            </div>
 
        </main>
 
