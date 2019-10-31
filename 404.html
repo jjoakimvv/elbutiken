@@ -7,55 +7,43 @@
     <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
-    <style>
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-        @media only screen and (max-width: 280px) {
-            body, p {
-                width: 95%;
-            }
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-        }
-    </style>
 </head>
+<style>
+  .text1-404{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    
+  }
+  .text2-404{
+    width: 100%;
+    text-align: center;
+  }
+
+</style>
 
 <body>
-    <div class="site">
+    <div>
 
-        <header class="invisible-header"></header>
+      <header class="invisible-header"></header>
 
-        <!-- Brett fönster -->
-        header class="invisible-header"></header>
-
-        <!-- Brett fönster -->
-        <header class="navbar-brett">
+      <!-- Brett fönster -->
+      <header class="navbar-brett" id="brett">
+        <picture class="navbar-logo">
+          <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
+        </picture>
+        <nav class="navbar-links">
+          <ul>
+            <li><a href="varukorg.html"><img src="" alt=""> Varukorg</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="handla.html">Handla</a></li>
+            <li><a href="index.html">Hem</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Mellan fönster -->
+      <header class="navbar-mellan" id="mellan">
           <picture class="navbar-logo">
             <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
           </picture>
@@ -69,43 +57,28 @@
             </ul>
           </nav>
         </header>
-        <!-- Mellan fönster -->
-        <header class="navbar-mellan">
-            <picture class="navbar-logo">
-              <a href="index.html"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
-            </picture>
-            <nav class="navbar-links">
+      <!-- Smalt fönster -->
+       <header class="topnav">
+          <a href="index.html" class="active"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
+          <!-- Navigation links (hidden by default) -->
+          <nav id="myLinks">
               <ul>
-                <li><a href="varukorg.html"><img src="" alt=""> Varukorg</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="omoss.html">Om oss</a></li>
+                <li><a class="active" href="index.html">Hem</a></li>
                 <li><a href="handla.html">Handla</a></li>
-                <li><a href="index.html">Hem</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="varukorg.html">Varukorg</a></li>
               </ul>
             </nav>
-          </header>
-        <!-- Smalt fönster -->
-         <header class="topnav">
-            <a href="index.html" class="active"><img src="./bilder/logo_elbutiken.png" alt="logo" style="height: 50px;"></a>
-            <!-- Navigation links (hidden by default) -->
-            <nav id="myLinks">
-                <ul>
-                  <li><a href="index.html">Hem</a></li>
-                  <li><a href="handla.html">Handla</a></li>
-                  <li><a href="omoss.html">Om oss</a></li>
-                  <li><a href="kontakt.html">Kontakt</a></li>
-                  <li><a href="varukorg.html">Varukorg</a></li>
-                </ul>
-              </nav>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-           </header>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+         </header>
 
-        <main class="main-area">
-            <h1 class="main-heading">404 Page Not Found</h1>
-            <p class="main-text">Sorry, but the page you were trying to view does not exist. <br><br>
+        <main class="main-area-index">
+            <h1 class="text1-404"><br><br>404 Page Not Found</h1>
+            <p class="text2-404"><br><br>Sorry, but the page you were trying to view does not exist. <br><br><br>
             <a href="index.html">Tryck här för att komma tillbaka till startsidan</a>
             </p>
         </main>
