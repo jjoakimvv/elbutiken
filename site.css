@@ -578,7 +578,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
  	background-color: rgb(32, 32, 32);
 	 color: white;
  }
-	/* Main hem - START */
+	/* Main startsida - START */
 	.site-index{
 		display: grid;
 		grid-template-columns: 1fr;
@@ -592,7 +592,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	}
 	.main-heading{
 		position: absolute;
-		top: 20%;
+		top: 10%;
 		width: 100%;
 		text-align: center;
 		text-shadow: 2px 2px 5px rgb(187, 187, 187);
@@ -601,7 +601,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	}
 	.main-text{
 		position: absolute;
-		top: 30%;
+		top: 15%;
 		left: 10%;
 		width: 80%;
 		text-align: center;
@@ -618,14 +618,14 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	.knapp1 .btn1{
 		position: absolute;
 		top: 50%;
-		left: 35%;
+		left: 30%;
 		transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		background-color: rgb(255, 255, 255);
 		color: rgb(0, 0, 0);
 		border: 1.5px solid black;
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-		font-size: 14px;
+		font-size: 10px;
 		padding: 12px 24px;
 		cursor: pointer;
 		border-radius: 5px;
@@ -644,14 +644,14 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	.knapp2 .btn2{
 		position: absolute;
 		top: 50%;
-		left: 65%;
+		left: 70%;
 		transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		background-color: rgb(255, 255, 255);
 		color: rgb(0, 0, 0);
 		border: 1.5px solid black;
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-		font-size: 14px;
+		font-size: 10px;
 		padding: 12px 24px;
 		cursor: pointer;
 		border-radius: 5px;
