@@ -104,8 +104,36 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 .main-area-kontakt{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	margin: 0px 15px 15px 15px;
+}
+.shoppa-knapp{
+	position: relative;
+	width: 100%;
+}
+.shoppa-knapp .btn{
+	position: absolute;
+	top: 120%;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	border: 1.5px solid black;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-size: 16px;
+	padding: 12px 24px;
+	margin: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+.shoppa-knapp .btn:hover{
+	background-color: black;
+	color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 input[type=text], select, textarea {
 	width: 100%;
@@ -117,7 +145,6 @@ input[type=text], select, textarea {
 	margin-bottom: 16px;
 	resize: vertical;
 }
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
 	background-color: rgb(202, 14, 14);
 	color: white;
@@ -126,15 +153,8 @@ input[type=submit] {
 	border-radius: 4px;
 	cursor: pointer;
 }
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
 	background-color: #45a049;
-}
-/* Add a background color and some padding around the form */
-.container {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
 }
 /*Main kontakt - END*/
 
@@ -341,6 +361,17 @@ input[type=submit]:hover {
 		text-align: center;
 	}
 	/*Main handla - END*/
+
+	/*Main kontakt - START*/
+	.container {
+		border-radius: 5px;
+		background-color: #d1d1d1;
+		padding: 20px;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		/*Main kontakt - END*/
+	}
 }
 
 /* mellan-fönster */
@@ -546,6 +577,16 @@ input[type=submit]:hover {
 		text-align: center;
 	}
 	/*Main handla - END*/
+	/*Main kontakt - START*/
+	.container {
+		border-radius: 5px;
+		background-color: #d1d1d1;
+		padding: 20px;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*Main kontakt - END*/	
 }
 
 /* smalt-fönster */
@@ -761,5 +802,15 @@ input[type=submit]:hover {
 		text-align: center;
 	}
 	/*Main handla - END*/
+	/*Main kontakt - START*/
+	.container {
+		border-radius: 5px;
+		background-color: #d1d1d1;
+		padding: 20px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		
 	}
+	/*Main kontakt - END*/
 }
