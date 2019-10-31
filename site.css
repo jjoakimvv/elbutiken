@@ -90,8 +90,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	height: 20px;
 }
 .heading-kontakt{
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
 	font-size: 2em;
 	padding: 2%;
 }
