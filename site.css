@@ -69,21 +69,23 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 
 /*Main om oss - START*/
-.site-omoss{
-	display: grid;
-	grid-template-columns: auto;
+	.invisible-row-omoss{
+		grid-row: 1;
+		grid-column: 1/4;
+		height: 60px;
 	}
 	.main-area-omoss{
 		display: grid;
 		grid-template-columns: 1fr;
-		text-align: center;
 	}
 	.omoss-heading{
 		font-size: 3em;
+		text-align: center;
 	}
 	.omoss-main-text{
 		font-size: 1em;
 		padding: 0.5em 3em;
+		text-align: center;
 	}
 	.logo-omoss{
 		left: 50%;
