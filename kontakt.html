@@ -71,28 +71,29 @@
       <main class="main-area-kontakt">
 
           <div class="container">
-              <form action="action_page.php">
+              <form action="kontakt.php">
             
-                <label for="fname">Förnamn</label>
-                <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn..">
+                <label for="fnamn">Förnamn</label>
+                <input type="text" id="fnamn" name="förnamn" placeholder="Ditt förnamn..">
             
-                <label for="lname">Efternamn</label>
-                <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+                <label for="enamn">Efternamn</label>
+                <input type="text" id="enamn" name="efternamn" placeholder="Ditt efternamn..">
 
-                <label for="lname">Epost-adress</label>
-                <input type="text" id="lname" name="lastname" placeholder="Din epost-adress..">
+                <label for="mail">E-postadress</label>
+                <input type="text" id="mail" name="mail" placeholder="Din e-postadress..">
             
-                <label for="country">Typ av ärende</label>
-                <select id="country" name="country">
-                  <option value="australia">Frågor om order</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
+                <label for="ärende">Typ av ärende</label>
+                <select id="ärende" name="ärende">
+                  <option value="produkt">Frågor om produkter</option>
+                  <option value="order">Frågor om order</option>
+                  <option value="retur">Frågor om retur/reklamation</option>
+                  <option value="övrigt">Övriga frågor</option>
                 </select>
             
-                <label for="subject">Subject</label>
+                <label for="subject">Din fråga</label>
                 <textarea id="subject" name="subject" placeholder="Skriv här.." style="height:100px"></textarea>
             
-                <input type="submit" value="Submit">
+                <input type="submit" value="Skicka">
             
                </form>
            </div>
