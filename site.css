@@ -782,7 +782,7 @@ input[type=submit]:hover {
 		color: rgb(0, 0, 0);
 		border: 1.5px solid black;
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-		font-size: 10px;
+		font-size: 14px;
 		padding: 12px 24px;
 		cursor: pointer;
 		border-radius: 5px;
@@ -808,7 +808,7 @@ input[type=submit]:hover {
 		color: rgb(0, 0, 0);
 		border: 1.5px solid black;
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-		font-size: 10px;
+		font-size: 14px;
 		padding: 12px 24px;
 		cursor: pointer;
 		border-radius: 5px;
